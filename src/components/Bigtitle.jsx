@@ -8,7 +8,7 @@ const Bigtitle = () => {
             marginBottom: '20px',
             textAlign: 'center'
         }}>
-            To Do List
+            Redux To Do List
         </Typography>
     )
 }
