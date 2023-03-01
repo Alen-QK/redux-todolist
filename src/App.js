@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from "react";
+import Todoform from "./components/Todoform";
+import Todolist from "./components/Todolist";
+import Bigtitle from "./components/Bigtitle";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div data-testid='todo-1'>
+      <Bigtitle/>
+      <Todoform/>
+      <Todolist/>
     </div>
   );
 }
